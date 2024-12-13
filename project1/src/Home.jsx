@@ -1,42 +1,15 @@
 // destructuring the useState hook or function 
 import { useState , useEffect } from "react";
 import Bloglist from "./Bloglist";
+import useFetch from "./UseFetch";
 
 const Home = () => {
-    const [blogs,setBlogs]=useState(null)
-    const [ isLoading, setIsLoading ]=useState(true)
-    const [ name, setName ]=useState("mario")
-    const [ error, setError ]=useState(null)
-
+    const { data: blogs, isLoading, error }=useFetch("http://localhost:8000/blogs")
+    
     const handleClick=(id) =>{
         const modifiedBlogs=blogs.filter((blog) => blog.id!==id)
-        setBlogs(modifiedBlogs)
+        // setBlogs(modifiedBlogs)
     }
-
-    setTimeout(()=>{
-        
-    },1000)
-    useEffect(()=>{
-        setTimeout(()=>{
-            fetch("http://localhost:8000/blogs")
-            .then(res => {
-                if(!res.ok) 
-                {
-                    throw Error("not found")
-                }
-                return res.json()
-            })
-            .then((data)=>{
-                setBlogs(data)
-                setIsLoading(false)
-                setError(null)
-            })
-            .catch((err)=>{
-                setIsLoading(false)
-                setError(err.message)
-            })
-        },1000)
-    },[])
 
     return ( 
         <div className="home">
