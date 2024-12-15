@@ -1,16 +1,64 @@
 {
-    "blogs":[
-        {
-            "title": "something",
-            "body": "this is a text",
-            "author": "mario",
-            "id": 1
-        },
-        {
-            "title": "anything",
-            "body": "this is a text",
-            "author": "luigi",
-            "id": 2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "something",
+      "body": "this is a text",
+      "author": "mario",
+      "id": "1"
+    },
+    {
+      "title": "anything",
+      "body": "this is a text",
+      "author": "luigi",
+      "id": "2"
+    },
+    {
+      "id": "6cf7",
+      "title": "dxasdf",
+      "body": "cdas",
+      "author": "mario"
+    },
+    {
+      "id": "3ed8",
+      "title": "new blog",
+      "body": "hi, how are you?",
+      "author": "yoshi"
+    },
+    {
+      "id": "1d4a",
+      "title": "new one",
+      "body": "hi, there, how are you?",
+      "author": "mario"
+    },
+    {
+      "id": "714a",
+      "title": "hello",
+      "body": "hi, ",
+      "author": "mario"
+    },
+    {
+      "id": "69ac",
+      "title": "hello..",
+      "body": "hi, ",
+      "author": "mario"
+    },
+    {
+      "id": "3592",
+      "title": "hello..",
+      "body": "hi, hi",
+      "author": "mario"
+    },
+    {
+      "id": "a7a6",
+      "title": "hello..",
+      "body": "hi, hi hu",
+      "author": "mario"
+    },
+    {
+      "id": "6562",
+      "title": "new post",
+      "body": "this is a new post",
+      "author": "mario"
+    }
+  ]
 }
